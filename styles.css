@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e6167; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+header {
+    background-color: #1e1e1e; /* Darker header background */
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Light text color */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4081; /* Highlight color on hover */
+}
+
+.cta {
+    margin-left: auto; /* Pushes the CTA button to the right */
+}
+
+.cta-button {
+    background-color: #ff4081; /* CTA button color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .cta {
+        margin-top: 10px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+.hero {
+    background-image: url('hero-bg.jpg'); /* Replace with your background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Position relative for overlay */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.7); /* Dark overlay for better text visibility */
+    z-index: 1; /* Place overlay below text */
+}
+
+.hero-content {
+    max-width: 600px; /* Limit width for better readability */
+    position: relative; /* Position relative to place text above overlay */
+    z-index: 2; /* Place text above overlay */
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Responsive font size */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em; /* Responsive font size */
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: #ff4081; /* Button color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    .hero p {
+        font-size: 1em; /* Smaller font size for mobile */
+    }
+
+    .hero-button {
+        padding: 8px 16px; /* Smaller button padding for mobile */
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+.how-it-works {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.step {
+    background-color: #1e1e1e; /* Darker background for each step */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Fixed width for each step */
+    transition: transform 0.3s;
+}
+
+.step img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.step h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+.step p {
+    font-size: 1em;
+}
+
+/* Hover effect for steps */
+.step:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column; /* Stack steps vertically on small screens */
+        align-items: center; /* Center align */
+    }
+
+    .step {
+        width: 90%; /* Full width on mobile */
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+.featured-products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.product {
+    background-color: #1e1e1e; /* Darker background for each product */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Fixed width for each product */
+    transition: transform 0.3s;
+}
+
+.product img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+.product p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.product-button {
+    background-color: #ff4081; /* Button color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-button:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+}
+
+/* Hover effect for products */
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column; /* Stack products vertically on small screens */
+        align-items: center; /* Center align */
+    }
+
+    .product {
+        width: 90%; /* Full width on mobile */
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+.why-choose {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.benefit {
+    background-color: #1e1e1e; /* Darker background for each benefit */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Fixed width for each benefit */
+    transition: transform 0.3s;
+}
+
+.benefit h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.benefit p {
+    font-size: 1em;
+}
+
+/* Hover effect for benefits */
+.benefit:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .benefits {
+        flex-direction: column; /* Stack benefits vertically on small screens */
+        align-items: center; /* Center align */
+    }
+
+    .benefit {
+        width: 90%; /* Full width on mobile */
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+.pricing {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.pricing-plan {
+    background-color: #1e1e1e; /* Darker background for each plan */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Fixed width for each plan */
+    transition: transform 0.3s;
+}
+
+.pricing-plan h3 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.price {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #ff4081; /* Highlight price color */
+}
+
+.pricing-plan ul {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.pricing-plan ul li {
+    margin: 5px 0;
+}
+
+.plan-button {
+    background-color: #ff4081; /* Button color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.plan-button:hover {
+    background-color: #b3e91e; /* Darker shade on hover */
+}
+
+/* Hover effect for pricing plans */
+.pricing-plan:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column; /* Stack plans vertically on small screens */
+        align-items: center; /* Center align */
+    }
+
+    .pricing-plan {
+        width: 90%; /* Full width on mobile */
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+.testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.testimonial {
+    background-color: #1e1e1e; /* Darker background for each testimonial */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Fixed width for each testimonial */
+    transition: transform 0.3s;
+}
+
+.testimonial img {
+    width: 100px; /* Fixed width for customer image */
+    height: 100px; /* Fixed height for customer image */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px;
+}
+
+.testimonial h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.testimonial p {
+    font-size: 1em;
+    font-style: italic; /* Italicize testimonial text */
+}
+
+/* Hover effect for testimonials */
+.testimonial:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column; /* Stack testimonials vertically on small screens */
+        align-items: center; /* Center align */
+    }
+
+    .testimonial {
+        width: 90%; /* Full width on mobile */
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+.cta {
+    background-color: #1e1e1e; /* Darker background for CTA section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align */
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff4081; /* Button color */
+    color: #ffffff; /* Button text color */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cta h2 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    .cta p {
+        font-size: 1em; /* Smaller font size for mobile */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Smaller button padding for mobile */
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+footer {
+    background-color: #1e1e1e; /* Darker background for footer */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.footer-links, .footer-contact, .footer-social {
+    margin: 20px;
+    flex: 1; /* Allow equal space for each section */
+    min-width: 200px; /* Minimum width for responsiveness */
+}
+
+.footer-links h3, .footer-contact h3, .footer-social h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+}
+
+.footer-links ul li, .footer-social ul li {
+    margin: 10px 0;
+}
+
+.footer-links a, .footer-social a {
+    text-decoration: none;
+    color: #ffffff; /* Light text color */
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: #ff4081; /* Highlight color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically on small screens */
+        align-items: center; /* Center align */
+    }
+}
